@@ -80,7 +80,6 @@ async def show_books(message: Message):
         await message.answer('Список пуст')
         return
 
-    text = '--Список книг--'
     for book in books:
         book_id, name, writer, genre = book
 
